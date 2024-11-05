@@ -1,0 +1,4 @@
+<div class="cell" [class.revealed]="cell.isRevealed" [class.mine]="cell.hasMine" (click)="revealCell()">
+    {{ cell.isRevealed ? (cell.hasMine ? '💣' : cell.neighboringMines) : '' }}
+  </div>
+  

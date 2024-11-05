@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ControlPanelComponent } from './game/control-panel/control-panel.component';
+import { GameModule } from './game/game.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ControlPanelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
